@@ -13,7 +13,7 @@ func RunE(cmd *cobra.Command, args []string) error {
 	session := geddit.NewSession("AaronsLonelyPostFinder")
 
 	subOpts := geddit.ListingOptions{
-		Limit: 10,
+		Limit: 5,
 	}
 
 	topics, err := session.SubredditSubmissions("photoclass2019", geddit.NewSubmissions, subOpts)
